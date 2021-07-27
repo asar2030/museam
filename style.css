@@ -1,5 +1,5 @@
 * {
-  font-family: 'Forum', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -13,6 +13,11 @@ li {
 a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+h1,
+h2 {
+  font-family: 'Forum', sans-serif;
 }
 
 .container {
@@ -34,7 +39,7 @@ a {
 
 .border-bottom {
   padding-bottom: 26px;
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid #710707;
 }
 
 .border-bottom-red {
@@ -69,10 +74,22 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-right: 525px;
+}
+
+.logo_container div {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.logo_container div:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #9D8665;
+}
+
+.logo_footer {
+  margin-right: 0;
 }
 
 .logo {
@@ -87,6 +104,7 @@ a {
   font-size: 28px;
   letter-spacing: 5px;
   text-transform: uppercase;
+  font-family: 'Forum', sans-serif;
 }
 
 .nav_container {
@@ -98,9 +116,21 @@ a {
 
 .nav_container li {
   margin-right: 76px;
-  font-size: 21px;
+  font-size: 22px;
   letter-spacing: 2px;
   color: #FFFFFF;
+}
+
+.nav_container li a {
+  font-weight: 200;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.nav_container li a:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #9D8665;
 }
 
 .nav_container li:last-child {
@@ -119,9 +149,11 @@ a {
 }
 
 .welcome_subtitle {
-  font-size: 27px;
+  font-size: 28px;
   color: #FFFFFF;
   margin-top: 26px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 .welcome_btn {
@@ -135,6 +167,14 @@ a {
   letter-spacing: 2px;
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.welcome_btn:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #9D8665;
 }
 
 .visiting {
@@ -168,16 +208,18 @@ a {
   margin: 9px 0;
   width: 300px;
   height: 2px;
-  background-color: black;
+  background-color: #710707;
 }
 
 .visiting_cards_tour {
-  font-size: 21px;
+  font-size: 22px;
+  font-weight: 200;
 }
 
 .visiting_cards_subtitle {
-  font-size: 17px;
+  font-size: 18px;
   margin-top: 11px;
+  font-weight: 200;
 }
 
 .explore {
@@ -197,6 +239,7 @@ a {
 
 .explore_title {
   display: inline;
+  padding-bottom: 26px;
 }
 
 .explore_text {
@@ -237,8 +280,13 @@ a {
 }
 
 .video_text {
-  width: 690px;
+  width: 720px;
   font-size: 22px;
+  text-align: justify;
+}
+
+.video_text h3 {
+  font-weight: 300;
 }
 
 .tickets {
@@ -274,10 +322,12 @@ a {
 
 .tickets_content_type_title {
   font-size: 28px;
+  font-weight: 700;
 }
 
 .tickets_content_type_radio {
-  font-size: 21px;
+  font-size: 22px;
+  font-weight: 300;
   margin-top: 51px;
 }
 
@@ -297,16 +347,18 @@ a {
 
 .tickets_content_amount_title {
   font-size: 28px;
+  font-weight: 700;
+  text-align: end;
 }
 
 .tickets_content_amount_age {
   margin-top: 11px;
   font-size: 22px;
+  font-weight: 300;
 }
 
 .tickets_content_amount_wrapper {
   margin-top: 14px;
-  width: 150px;
   height: 50px;
   padding: 6px;
   border: 3px solid #FFFFFF;
@@ -338,6 +390,7 @@ a {
 .tickets_content_amount_price {
   margin-top: 50px;
   font-size: 28px;
+  font-weight: 700;
 }
 
 .tickets_content_amount_btn {
@@ -347,7 +400,18 @@ a {
   width: 175px;
   height: 50px;
   font-size: 22px;
+  font-weight: 300;
   letter-spacing: 2px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.tickets_content_amount_btn:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #9D8665;
+  color: black;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -377,10 +441,26 @@ input[type=number]::-webkit-outer-spin-button {
 .contacts_info_title {
   font-size: 28px;
   padding-bottom: 15px;
+  font-weight: 500;
 }
 
 .contacts_info_information {
   margin-top: 21px;
+  font-weight: 300;
+}
+
+.contacts_info_information a {
+  color: black;
+  margin-top: 21px;
+  font-weight: 300;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contacts_info_information a:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #9D8665;
 }
 
 .footer {
@@ -413,12 +493,22 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 21px;
+  font-size: 22px;
   letter-spacing: 2px;
 }
 
 .footer_nav_li {
   margin-bottom: 25px;
+}
+
+.footer_nav_li a {
+  font-weight: 200;
+}
+
+.footer_nav_li a:hover {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  color: #9D8665;
 }
 
 .footer_nav_li:last-child {

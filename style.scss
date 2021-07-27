@@ -1,5 +1,5 @@
 * {
-    font-family: 'Forum', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -15,6 +15,10 @@ a {
     color: #FFFFFF;
 }
 
+h1,
+h2 {
+    font-family: 'Forum', sans-serif;
+}
 .container {
     margin: 0 auto;
     max-width: 1440px;
@@ -34,7 +38,7 @@ a {
 
 .border-bottom {
     padding-bottom: 26px;
-    border-bottom: 3px solid #000000;
+    border-bottom: 3px solid #710707;
     &-red {
         border-bottom: 3px solid #710707;
         width: inherit;
@@ -58,9 +62,19 @@ a {
 
 .logo_container {
     display: flex;
-    align-items: center;
     margin-right: 525px;
+    div {
+        transition: 0.3s all;
+        &:hover {
+            transition: 0.3s all;
+            color: #9D8665;
+        }
+    }
 }
+.logo_footer {
+    margin-right: 0;
+}
+
 .logo {
     background-image: url(./assets/img/logo.svg);
     width: 49px;
@@ -71,6 +85,7 @@ a {
         font-size: 28px;
         letter-spacing: 5px;
         text-transform: uppercase;
+        font-family: 'Forum', sans-serif;
     }
 }
 
@@ -80,9 +95,17 @@ a {
         max-width: 720px;
         li {
             margin-right: 76px;
-            font-size: 21px;
+            font-size: 22px;
             letter-spacing: 2px;
             color: #FFFFFF;
+            a {
+                font-weight: 200;
+                transition: 0.3s all;
+                &:hover {
+                    transition: 0.3s all;
+                    color: #9D8665;
+                }
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -99,9 +122,11 @@ a {
         padding-top: 114px;
     }
     &_subtitle {
-        font-size: 27px;
+        font-size: 28px;
         color: #FFFFFF;
         margin-top: 26px;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
     }
     &_btn {
         margin-top: 77px;
@@ -114,6 +139,11 @@ a {
         letter-spacing: 2px;
         color: #FFFFFF;
         cursor: pointer;
+        transition: 0.3s all;
+        &:hover {
+            transition: 0.3s all;
+            background-color: #9D8665;
+        }
     }
 }
 
@@ -141,14 +171,16 @@ a {
             margin: 9px 0;
             width: 300px;
             height: 2px;
-            background-color: black;
+            background-color: #710707;
         }
         &_tour {
-            font-size: 21px;
+            font-size: 22px;
+            font-weight: 200;
         }
         &_subtitle {
-            font-size: 17px;
+            font-size: 18px;
             margin-top: 11px;
+            font-weight: 200;
         }
     }
 }
@@ -164,6 +196,7 @@ a {
     }
     &_title {
         display: inline;
+        padding-bottom: 26px;
     }
     &_text {
         margin-top: 81px;
@@ -190,8 +223,12 @@ a {
         }
     }
     &_text {
-        width: 690px;
+        width: 720px;
         font-size: 22px;
+        text-align: justify;
+        h3 {
+            font-weight: 300;
+        }
     }
 }
 
@@ -218,13 +255,15 @@ a {
         &_type {
             &_title {
                 font-size: 28px;
+                font-weight: 700;
             }
             &_radio {
+                font-size: 22px;
+                font-weight: 300;
                 &_wrapper {
                     display: flex;
                     flex-direction: column;
                 }
-                font-size: 21px;
                 margin-top: 51px;
             }
         }
@@ -232,14 +271,16 @@ a {
             color: #FFFFFF;
             &_title {
                 font-size: 28px;
+                font-weight: 700;
+                text-align: end;
             }
             &_age {
                 margin-top: 11px;
                 font-size: 22px;
+                font-weight: 300;
             }
             &_wrapper {
                 margin-top: 14px;
-                width: 150px;
                 height: 50px;
                 padding: 6px;
                 border: 3px solid #FFFFFF;
@@ -262,6 +303,7 @@ a {
             &_price {
                 margin-top: 50px;
                 font-size: 28px;
+                font-weight: 700;
             }
             &_btn {
                 margin-top: 50px;
@@ -270,7 +312,15 @@ a {
                 width: 175px;
                 height: 50px;
                 font-size: 22px;
+                font-weight: 300;
                 letter-spacing: 2px;
+                transition: 0.3s all;
+                cursor: pointer;
+                &:hover {
+                    transition: 0.3s all;
+                    background-color: #9D8665;
+                    color: black;
+                }
             }
         }
     }
@@ -296,9 +346,21 @@ input[type=number]::-webkit-outer-spin-button {
         &_title {
             font-size: 28px;
             padding-bottom: 15px;
+            font-weight: 500;
         }
         &_information {
             margin-top: 21px;
+            font-weight: 300;
+            a {
+                color: black;
+                margin-top: 21px;
+                font-weight: 300;
+                transition: 0.3s all;
+                &:hover {
+                    transition: 0.3s all;
+                    color: #9D8665;
+                }
+            }
         }
     }
 }
@@ -321,10 +383,17 @@ input[type=number]::-webkit-outer-spin-button {
         width: 352px;
         display: flex;
         justify-content: space-between;
-        font-size: 21px;
+        font-size: 22px;
         letter-spacing: 2px;
         &_li {
             margin-bottom: 25px;
+            a {
+                font-weight: 200;
+                &:hover {
+                    transition: 0.3s all;
+                    color: #9D8665;
+                }
+            }
             &:last-child {
                 margin-bottom: 0;
             }
